@@ -84,6 +84,7 @@ class Livro(models.Model):
     editora = models.ForeignKey(Editora, on_delete=models.CASCADE)
     preco = models.DecimalField(max_digits=10, decimal_places=2)
     data_publicacao = models.DateField(default='2000-01-01')
+    
 
     def __str__(self):
         return self.nome

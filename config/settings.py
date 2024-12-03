@@ -13,6 +13,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "app",
+    'crispy_forms',
+    'crispy_bootstrap4',  # Adiciona o tema Bootstrap 4 para o Crispy Forms|
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -76,3 +78,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "app/static/"),
 ]
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# Configuração do Crispy Forms
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
